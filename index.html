@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Background Changer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Gradient Row -->
+        <div class="gradient-row">
+            <span class="gradient-label">Left Gradient</span>
+            <!-- Buttons for left gradient -->
+            <button class="button purple" onclick="changeBackground('purple', this, true)"></button>
+            <button class="button blue" onclick="changeBackground('blue', this, true)"></button>
+            <button class="button green" onclick="changeBackground('green', this, true)"></button>
+            <button class="button yellow" onclick="changeBackground('yellow', this, true)"></button>
+            <button class="button orange" onclick="changeBackground('orange', this, true)"></button>
+            <button class="button red" onclick="changeBackground('red', this, true)"></button>
+        </div>
+
+        <!-- Right Gradient Row -->
+        <div class="gradient-row">
+            <span class="gradient-label">Right Gradient</span>
+            <!-- Buttons for right gradient -->
+            <button class="button purple" onclick="changeBackground('purple', this, false)"></button>
+            <button class="button blue" onclick="changeBackground('blue', this, false)"></button>
+            <button class="button green" onclick="changeBackground('green', this, false)"></button>
+            <button class="button yellow" onclick="changeBackground('yellow', this, false)"></button>
+            <button class="button orange" onclick="changeBackground('orange', this, false)"></button>
+            <button class="button red" onclick="changeBackground('red', this, false)"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* Styles for the body, which includes the background gradient and centering the content */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff 50%, #ffffff 50%);
+}
+
+/* Styles for the container that holds the rows of buttons */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for each row of buttons */
+.gradient-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the buttons horizontally */
+    margin-bottom: 10px;
+    /* Add spacing between rows */
+}
+
+/* Styles for the labels of the gradient rows */
+.gradient-label {
+    margin-right: 10px;
+    /* Reduce the margin for spacing */
+    font-weight: bold;
+}
+
+/* Styles for each button in the gradient rows */
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid silver;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Adjusted box shadow */
+    transform-origin: center;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+/* Styles for button hover effect */
+.button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Adjusted hover effect */
+}
+
+/* Styles for the active button */
+.button.active {
+    /* Use a gold border color for active buttons */
+    border-color: gold;
+}
+
+/* Button colors remain the same as before */
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
